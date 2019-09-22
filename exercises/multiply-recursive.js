@@ -10,8 +10,24 @@
  */
 
 // Your code :
+
 const multiply = (a, b) => {
-  
+  if (b === 1)
+  {
+    return a;
+  } else if (b === -1)
+  {
+    return - a;
+  } else if ((b === 0) || (a === 0))
+  {
+    return 0;
+  } else if (b > 0)
+  {
+    return a + multiply(a, b - 1);
+  } else
+  {
+    return - a + multiply(a, b + 1);
+  }
 }
 
 //* Begin of tests

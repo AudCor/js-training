@@ -9,6 +9,7 @@
  */
 
 // Your code :
+/*
 const multiply = (a, b) => {
   let result = 0;
   if (b >= 0 && a >= 0) 
@@ -39,6 +40,22 @@ const multiply = (a, b) => {
 
   return result;
 }
+*/
+const multiply = (a, b) => {
+  let result = 0;
+  const abs = (n) => { return (n >= 0 ? n : - n); }
+  const absA = abs(a);
+  const absB = abs(b);
+
+  for (let i = 0; i < absB; i++) {
+    result += absA;
+  }
+  if ((b >= 0 && a >= 0) || (b < 0 && a < 0)) {
+    return result;
+  } else {
+    return 0 - result;
+  }
+} 
 //* Begin of tests
 const assert = require('assert')
 
