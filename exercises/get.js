@@ -16,6 +16,12 @@ const sourceObject = {
 }
 
 // Your code :
+const get = (k) => {
+  return sourceObject[k];
+  // pourquoi return sourceObject.k; ne fonctionne pas ???
+}
+
+
 
 //* Begin of tests
 const assert = require('assert')

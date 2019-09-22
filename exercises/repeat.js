@@ -7,7 +7,14 @@
  * Of course you may not use the method directly
  *
  */
-
+const repeat = (str, num) => {
+let newStr = "";
+for (let i = 0; i < num; i++)
+  {
+    newStr += str;
+  }
+return newStr;
+}
 //* Begin of tests
 const assert = require('assert')
 

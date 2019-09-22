@@ -10,9 +10,11 @@
  */
 
 // Your code :
-
+function abs(number) {
+return (number >= 0 ? number : - number);
+}
 //* Begin of tests
-const assert = require('assert')
+const assert = require('assert') 
 
 assert.strictEqual(typeof abs, 'function')
 assert.strictEqual(abs.toString().includes('Math.abs'), false)

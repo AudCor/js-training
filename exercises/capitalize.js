@@ -6,6 +6,10 @@
  * and in lowercase for the rest of the string
  *
  */
+function capitalize(someString) {
+  return someString.slice(0, 1).toUpperCase() + someString.slice(1).toLowerCase();
+}
+
 
 
 //* Begin of tests

@@ -5,7 +5,14 @@
  * and return the total
  *
  */
-
+const total = (numbers) => {
+  let addNum = 0;
+  for (let i = 0; i < numbers.length; i++)
+  {
+    addNum += numbers[i];
+  }
+  return addNum;
+}
 
 //* Begin of tests
 const assert = require('assert')
